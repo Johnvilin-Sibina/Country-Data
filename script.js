@@ -19,16 +19,17 @@ function bar(data1){
       col.innerHTML = `<div class="card" style="width: 18rem;">
       <img src="..." class="card-img-top" alt="...">
       <div class="card-body">
-        <h5 class="card-title">${data1[i].name.common}</h5>
-        <h6>${data1[i].capital ? data1[i].capital : "Capital not found"}<h6>
-        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+        <h5 class="card-title">Name: ${data1[i].name.common}</h5>
+        <h6></h6>
+        <p class="card-text">Capital: ${data1[i].capital ? data1[i].capital : "Capital not found"}</p>
       </div>
     </div>`
     row.append(col);
     container.append(row);
-    document.body.append(container)
+    document.body.append(container);
    }
 }
+
 
 
 
